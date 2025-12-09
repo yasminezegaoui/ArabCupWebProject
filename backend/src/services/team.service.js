@@ -20,7 +20,8 @@ export const TeamService={
         where:({teamId:parseInt(id)}),
         include:{team:true},
     }),
-    //- fetch team matches
+    /**
+    /- fetch team matches
     getTeamMaches:(id)=>prisma.match.findMany({
         where:[
             
@@ -33,4 +34,15 @@ export const TeamService={
             awayTeam:true,
         }
     })
+     */
+    getTeamMaches: async (id)=>{
+        const homeMatches= await prisma.match.findMany({
+            where: {homeTeamId: Number(id)}
+
+        });
+        const awayMatches= await prisma.match.findMany({
+            where: {awayTeamId: Number(id)}
+        });
+        return [...homeMatches, ...awayMatches];
+    }
 }
