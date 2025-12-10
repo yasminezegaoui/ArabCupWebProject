@@ -41,7 +41,13 @@ export const TeamService={
 
         });
         const awayMatches= await prisma.match.findMany({
-            where: {awayTeamId: Number(id)}
+            where: {awayTeamId: Number(id)},
+            ordredBy: {date:"desc"},
+            include:{
+                homeTeam:true,
+                awayTeam:true,
+            }
+            
         });
         return [...homeMatches, ...awayMatches];
     }

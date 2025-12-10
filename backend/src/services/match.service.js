@@ -3,7 +3,6 @@ import {prisma}  from "../config/db";
 export const MatchService={
 
     //- fetch all matches
-
     getAllMatches: ()=>prisma.match.findMany({
         include:{
             homeTeam:true,
@@ -23,32 +22,47 @@ export const MatchService={
 
     // upcoming matches 
     getUpcomingMaches:()=>{
-        prisma.match.findMany({
+        return prisma.match.findMany({
             where:{
                 status: "upcoming"
             },
             orderBy:{
-                data:"asc"
+                date:"asc"
             },
         })
 
     },
     // finished matches
     getFinishedMatches:()=>{
-        prisma.match.findMany({
+        return prisma.match.findMany({
             where:{
                 status: "finished"
             },
             orderBy:{
-                data:"desc"
+                date:"desc"
             },
         })
     },
     // match details
+    getMatchDetails:(id)=>{
+        return prisma.match.findUnique({
+            where:{id: Number(id)},
+            include:{
+                homeTeam:true,
+                awayTeam:true,
+                matchEvents:{
+                    orderBy:{
+                        minute:"asc"
+                    }
+                },
+                stadium:true,
+            }
+        })
+    },
 
     //match events
     getMatchEvents:(id)=>{
-        prisma.match.findMany({
+        return prisma.matchEvent.findMany({
             where: {
                 matchId: Number(id)
             },
