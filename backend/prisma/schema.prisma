@@ -12,3 +12,69 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+
+model Team{
+  id Int @id @default(autoincrement())
+  name String
+  flag String
+  group String
+  fifaRank Int?
+  players Player[]
+  matchesHome Match[] @relation("HomeMatches")
+  matchesAway Match[] @relation("AwayMatches")
+
+}
+
+model Player{
+  id Int @id @default(autoincrement())
+  name String
+  position String
+  age Int?
+  goals Int @default(0)
+  assists Int @default(0)
+  yellowCards Int     @default(0)
+  redCards    Int     @default(0)
+  minutes     Int     @default(0)
+  teamId      Int
+
+  team        Team    @relation(fields: [teamId], references: [id])
+}
+
+
+model Match {
+  id          Int       @id @default(autoincrement())
+  homeTeamId  Int
+  awayTeamId  Int
+  date        DateTime
+  stadium     String?
+  homeScore   Int       @default(0)
+  awayScore   Int       @default(0)
+  status      MatchStatus
+
+  homeTeam    Team      @relation("HomeMatches", fields: [homeTeamId], references: [id])
+  awayTeam    Team      @relation("AwayMatches", fields: [awayTeamId], references: [id])
+  events      MatchEvent[]
+}
+
+enum MatchStatus {
+  UPCOMING
+  FINISHED
+}
+
+
+model MatchEvent {
+  id        Int       @id @default(autoincrement())
+  matchId   Int
+  minute    Int
+  type      EventType
+  playerId  Int
+
+  match     Match     @relation(fields: [matchId], references: [id])
+}
+
+enum EventType {
+  GOAL
+  YELLOW
+  RED
+}
