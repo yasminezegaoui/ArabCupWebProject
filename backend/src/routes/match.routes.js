@@ -1,5 +1,5 @@
 import express from "express";
-import { getAllMatches } from "../controllers/match.controller";
+import { getAllMatches } from "../controllers/match.controller.js";
 
 const router= express.Router();
 

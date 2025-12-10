@@ -1,4 +1,4 @@
-import { TeamService } from "../services/team.service";
+import { TeamService } from "../services/team.service.js";
 
 export const getAllTeams=async (req,res)=>{
     try{
