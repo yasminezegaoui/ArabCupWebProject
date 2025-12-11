@@ -1,12 +1,12 @@
 import express from "express";
-import { getAllMatches } from "../controllers/match.controller";
+import { getAllMatches, getMatchById, getUpcomingMaches, getFinishedMatches, getMatchDetails, getMatchEvents } from "../controllers/match.controller.js";
 
-const router= express.Router();
+const router = express.Router();
 
-router.get("/", getAllMatches());
-router.get ("/:id", getMatchById());
-router.get("/upcoming", getUpcomingMaches());
-router.get("/finished", getFinishedMatches());
+router.get("/", getAllMatches);
+router.get("/:id", getMatchById);
+router.get("/upcoming", getUpcomingMaches);
+router.get("/finished", getFinishedMatches);
 router.get("/:id/details", getMatchDetails());
 router.get("/:id/events", getMatchEvents());
 
