@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "homeTeamId": 1,
+    "awayTeamId": 2,
+    "date": "2025-12-15T18:00:00.000Z",
+    "stadium": "Stade Ahmed Bin Ali",
+    "status": "FINISHED",
+    "homeScore": 2,
+    "awayScore": 1
+  },
+  {
+    "id": 2,
+    "homeTeamId": 3,
+    "awayTeamId": 4,
+    "date": "2025-12-17T20:00:00.000Z",
+    "stadium": "Lusail Stadium",
+    "status": "UPCOMING",
+    "homeScore": null,
+    "awayScore": null
+  },
+  {
+    "id": 3,
+    "homeTeamId": 5,
+    "awayTeamId": 6,
+    "date": "2025-12-18T16:00:00.000Z",
+    "stadium": "974 Stadium",
+    "status": "UPCOMING",
+    "homeScore": null,
+    "awayScore": null
+  },
+  {
+    "id": 4,
+    "homeTeamId": 2,
+    "awayTeamId": 1,
+    "date": "2025-12-20T18:00:00.000Z",
+    "stadium": "Stade de Marrakech",
+    "status": "UPCOMING",
+    "homeScore": null,
+    "awayScore": null
+  },
+  {
+    "id": 5,
+    "homeTeamId": 4,
+    "awayTeamId": 3,
+    "date": "2025-12-21T20:00:00.000Z",
+    "stadium": "King Fahd Stadium",
+    "status": "UPCOMING",
+    "homeScore": null,
+    "awayScore": null
+  }
+]
+

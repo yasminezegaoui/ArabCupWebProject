@@ -1,0 +1,18 @@
+[
+  {"id": 1, "name": "Algeria", "flag": "🇩🇿", "group": "A", "fifaRank": 30},
+  {"id": 2, "name": "Saudi Arabia", "flag": "🇸🇦", "group": "A", "fifaRank": 51},
+  {"id": 3, "name": "Egypt", "flag": "🇪🇬", "group": "A", "fifaRank": 45},
+  {"id": 4, "name": "Lebanon", "flag": "🇱🇧", "group": "A", "fifaRank": 101},
+  {"id": 5, "name": "Morocco", "flag": "🇲🇦", "group": "B", "fifaRank": 22},
+  {"id": 6, "name": "Jordan", "flag": "🇯🇴", "group": "B", "fifaRank": 93},
+  {"id": 7, "name": "Syria", "flag": "🇸🇾", "group": "B", "fifaRank": 82},
+  {"id": 8, "name": "Palestine", "flag": "🇵🇸", "group": "B", "fifaRank": 101},
+  {"id": 9, "name": "Tunisia", "flag": "🇹🇳", "group": "C", "fifaRank": 28},
+  {"id": 10, "name": "Oman", "flag": "🇴🇲", "group": "C", "fifaRank": 77},
+  {"id": 11, "name": "UAE", "flag": "🇦🇪", "group": "C", "fifaRank": 70},
+  {"id": 12, "name": "India", "flag": "🇮🇳", "group": "C", "fifaRank": 101},
+  {"id": 13, "name": "Qatar", "flag": "🇶🇦", "group": "D", "fifaRank": 42},
+  {"id": 14, "name": "Iraq", "flag": "🇮🇶", "group": "D", "fifaRank": 70},
+  {"id": 15, "name": "Bahrain", "flag": "🇧🇭", "group": "D", "fifaRank": 100},
+  {"id": 16, "name": "Kuwait", "flag": "🇰🇼", "group": "D", "fifaRank": 113}
+]

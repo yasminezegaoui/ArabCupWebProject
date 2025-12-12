@@ -1,0 +1,6 @@
+[
+  { "id": 1, "matchId": 1, "playerId": 1, "minute": 23, "type": "GOAL" },
+  { "id": 2, "matchId": 1, "playerId": 5, "minute": 45, "type": "GOAL" },
+  { "id": 3, "matchId": 1, "playerId": 3, "minute": 67, "type": "YELLOW" },
+  { "id": 4, "matchId": 1, "playerId": 2, "minute": 75, "type": "GOAL" }
+]

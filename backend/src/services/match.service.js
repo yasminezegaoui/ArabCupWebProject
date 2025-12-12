@@ -24,11 +24,15 @@ export const MatchService={
     getUpcomingMaches:()=>{
         return prisma.match.findMany({
             where:{
-                status: "upcoming"
+                status: "UPCOMING"
             },
             orderBy:{
                 date:"asc"
             },
+            include: {
+                homeTeam: true,
+                awayTeam: true,
+            }
         })
 
     },
@@ -36,26 +40,30 @@ export const MatchService={
     getFinishedMatches:()=>{
         return prisma.match.findMany({
             where:{
-                status: "finished"
+                status: "FINISHED"
             },
             orderBy:{
                 date:"desc"
             },
+            include: {
+                homeTeam: true,
+                awayTeam: true,
+            }
         })
     },
     // match details
     getMatchDetails:(id)=>{
         return prisma.match.findUnique({
-            where:{id: Number(id)},
+            where:{id: Number(id)   },
             include:{
                 homeTeam:true,
                 awayTeam:true,
-                matchEvents:{
+                events:{
                     orderBy:{
                         minute:"asc"
                     }
                 },
-                stadium:true,
+                //stadium:true,   STADUIM MACHI RELATIONN!!
             }
         })
     },
