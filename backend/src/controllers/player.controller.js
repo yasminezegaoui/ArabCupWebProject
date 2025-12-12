@@ -12,29 +12,29 @@ export const getAllPlayers=async(req,res)=>{
         console.error(error)
         res.status(500).json({
             success: false,
-            message:" Internal Server Error"
-        });
+            message: "Internal Server Error"
+        })
     }
 }
 
 export const getPlayerById=async(req,res)=>{
     try {
-        const {id}=req.params;
-
-        if (!id){
-            res.status(400).json({
+        const { id } = req.params;
+        if (!id) {
+            return res.status(400).json({
                 success: false,
                 message: "Player ID is required!"
             });
         }
-        const player= await PlayerServices.getPlayerById();
-        if(!player){
-            res.status(400).json({
+        const player = await PlayerServices.getPlayerById(id);
+        if (!player) {
+            return res.status(404).json({
                 success: false,
                 message: "Player not found!"
-            })
+            });
         }
-        res.json({
+
+        return res.json({
             success: true,
             data: player
         });
@@ -52,10 +52,25 @@ export const getPlayersByTeam=async (req,res) => {
     try {
 
 
+        const { teamId } = req.params;
+        if (!teamId) {
+            return res.status(400).json({
+                success: false,
+                message: "Team ID is required"
+            });
+        }
 
-        res.json({
+        const players = await PlayerServices.getPlayersByTeam(teamId);
+        if (!players || players.length === 0) {
+            return res.status(404).json({
+                success: false,
+                message: "No players found for this team"
+            });
+        }
+
+        return res.json({
             success: true,
-            data: player
+            data: players
         });
     } catch (error) {
         console.error(error);
@@ -68,7 +83,26 @@ export const getPlayersByTeam=async (req,res) => {
 
 export const getPlayersByGoals=async (req,res) => {
         try {
-            
+            const { minGoals } = req.params;
+            if (minGoals === undefined) {
+                return res.status(400).json({
+                    success: false,
+                    message: "Minimum goals (minGoals) is required"
+                });
+            }
+
+            const players = await PlayerServices.getPlayersByGoals(minGoals);
+            if (!players || players.length === 0) {
+                return res.status(404).json({
+                    success: false,
+                    message: "No players found with the given minimum goals"
+                });
+            }
+
+            return res.json({
+                success: true,
+                data: players
+            });
         } catch (error) {
             console.error(error);
             res.status(500).json({
@@ -80,12 +114,27 @@ export const getPlayersByGoals=async (req,res) => {
 
 export const getPlayerByPosition = async(req,res)=>{
     try {
-        
+
+        const { position } = req.params;
+        if (!position) {
+            return res.status(400).json({
+                success: false,
+                message: "Position is required"
+            });
+        }
+
+        const players = await PlayerServices.getPlayerByPosition(position);
+        if (!players || players.length === 0) {
+            return res.status(404).json({
+                success: false,
+                message: "No players found for this position"
+            });
+        }
 
         return res.json({
-            success:true,
-            data : player
-        })
+            success: true,
+            data: players
+        });
     } catch (error) {
         console.error(error)
         res.status(500).json({
