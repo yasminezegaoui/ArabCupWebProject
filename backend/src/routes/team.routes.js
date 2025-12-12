@@ -1,4 +1,5 @@
 import express from "express";
+
 import { getAllTeams, getTeamById, getTeamPlayers, getTeamMatches } from "../controllers/team.controller.js";
 
 const router = express.Router();

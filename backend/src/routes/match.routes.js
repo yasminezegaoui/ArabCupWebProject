@@ -1,4 +1,5 @@
 import express from "express";
+
 import { getAllMatches, getMatchById, getUpcomingMaches, getFinishedMatches, getMatchDetails, getMatchEvents } from "../controllers/match.controller.js";
 
 const router = express.Router();

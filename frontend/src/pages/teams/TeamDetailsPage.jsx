@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DashboardLayout = () => {
+const TeamDetailsPage = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const DashboardLayout = () => {
   )
 }
 
-export default DashboardLayout
+export default TeamDetailsPage

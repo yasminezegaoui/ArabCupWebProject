@@ -1,4 +1,5 @@
 import express from "express";
+
 import { getAllPlayers, getPlayerById, getPlayersByTeam, getPlayerByPosition, getPlayersByGoals, searchPlayer } from "../controllers/player.controller.js";
 
 const router = express.Router();
