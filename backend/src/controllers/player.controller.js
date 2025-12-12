@@ -1,4 +1,4 @@
-import { PlayerServices } from "../services/player.service";
+import { PlayerServices } from "../services/player.service.js";
 
 export const getAllPlayers=async(req,res)=>{
     try {
@@ -153,7 +153,8 @@ export const searchPlayer=async(req,res)=>{
             })
         }
         const player= await PlayerServices.searchPlayer(name)
-        if(!player){
+        if (player.length === 0) {
+
             return res.status(400).json({
                 success: false,
                 message:"Player not found"

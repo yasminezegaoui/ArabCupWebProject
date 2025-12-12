@@ -40,8 +40,8 @@ function cleanRecordNoId(obj) {
 }
 
 const teams = rawTeams.map(cleanRecord);
-const players = rawPlayers.map(cleanRecordNoId);
-let matches = rawMatches.map(cleanRecordNoId);
+const players = rawPlayers.map(cleanRecord);
+let matches = rawMatches.map(cleanRecord);
 const events = rawEvents.map(cleanRecordNoId);
 
 // Ensure match numeric fields are valid (Prisma Int fields can't be null)

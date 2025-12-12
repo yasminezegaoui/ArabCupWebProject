@@ -4,10 +4,10 @@ import { getAllMatches, getMatchById, getUpcomingMaches, getFinishedMatches, get
 const router = express.Router();
 
 router.get("/", getAllMatches);
-router.get("/:id", getMatchById);
 router.get("/upcoming", getUpcomingMaches);
 router.get("/finished", getFinishedMatches);
 router.get("/:id/details", getMatchDetails);
 router.get("/:id/events", getMatchEvents);
+router.get("/:id", getMatchById);
 
 export default router;

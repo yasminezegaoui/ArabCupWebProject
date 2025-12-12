@@ -1,4 +1,4 @@
-import { MatchService } from "../services/match.service";
+import { MatchService } from "../services/match.service.js";
 
 
 export const getAllMatches= async (req,res) => {
@@ -74,7 +74,7 @@ export const getUpcomingMaches= async (req,res) => {
 
 export const getFinishedMatches= async (req,res) => {
     try {
-        const match= await MatchService.getUpcomingMaches()
+        const match= await MatchService.getFinishedMatches()
         if (!match) {
             return res.status(400).json({
                 success: false,
@@ -110,7 +110,7 @@ export const getMatchDetails= async (req,res) => {
         if (!match) {
             return res.status(400).json({
                 success: false,
-                message: ""
+                message: "match not found"
             })            
         }
         res.json({
