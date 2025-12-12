@@ -1,4 +1,4 @@
-import { PlayerServices } from "../services/player.service";
+import { PlayerServices } from "../services/player.service.js";
 
 export const getAllPlayers=async(req,res)=>{
     try {

@@ -1,4 +1,4 @@
-import { MatchService } from "../services/match.service";
+import { MatchService } from "../services/match.service.js";
 
 
 export const getAllMatches= async (req,res) => {
