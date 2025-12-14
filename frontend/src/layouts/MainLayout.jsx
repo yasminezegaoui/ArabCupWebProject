@@ -4,14 +4,12 @@ import Footer from "../components/footer/Footer.jsx";
 
 export default function MainLayout() {
   return (
-    <div>
-      <div>
-        <Navbar />
-        <main>
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="grow">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 }
