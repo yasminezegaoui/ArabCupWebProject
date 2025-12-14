@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext, useContext } from 'react';
+import React, { useState, useEffect} from 'react';
 import { HomePage } from './pages/home/HomePage';
 import { useAppContext ,AppContext} from './context/AppContext';
 import Footer from './components/footer/Footer';
@@ -84,9 +84,9 @@ const App = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         {currentPage === 'home' && <HomePage />}
         {currentPage === 'teams' && <TeamsPage />}
         {currentPage === 'team-details' && <TeamDetailsPage />}

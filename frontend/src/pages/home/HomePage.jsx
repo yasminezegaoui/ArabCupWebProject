@@ -12,7 +12,7 @@ export const HomePage = () => {
 
   return (
     <div className="space-y-8">
-      <div className="bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg p-8 md:p-12">
+      <div className="bg-linear-to-r from-red-600 to-red-800 text-white rounded-lg p-8 md:p-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Arab Cup 2025</h1>
         <p className="text-lg md:text-xl opacity-90 mb-6">
           Experience the excitement of Arab football's premier tournament

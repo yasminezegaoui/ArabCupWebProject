@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext} from 'react';
 // API Base URL
 const API_BASE = 'http://localhost:3000';
 
