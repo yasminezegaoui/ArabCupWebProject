@@ -1,34 +1,66 @@
-import React from 'react';
-import { FaSearch, FaGlobe } from 'react-icons/fa';
+import { useState } from 'react';
+import { Trophy, Users, Star, Calendar, Menu, X } from 'lucide-react';
+import { useAppContext } from '../../context/AppContext';
 
 const Navbar = () => {
+  const { navigate, currentPage } = useAppContext();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navItems = [
+    { id: 'home', label: 'Home', icon: Trophy },
+    { id: 'teams', label: 'Teams', icon: Users },
+    { id: 'players', label: 'Players', icon: Star },
+    { id: 'matches', label: 'Matches', icon: Calendar },
+    { id: 'leaderboard', label: 'Leaderboard', icon: Trophy }
+  ];
+
   return (
-    <div className="bg-[rgba(241,235,225,1)] px-8 py-4">
-      <div className="flex items-center justify-between">
+    <nav className="bg-gradient-to-r from-red-800 to-red-900 text-white shadow-lg sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center cursor-pointer" onClick={() => navigate('home')}>
+            <Trophy className="h-8 w-8 mr-2" />
+            <span className="text-xl font-bold">Arab Cup 2025</span>
+          </div>
 
-        <h1 className="text-[24px] font-bold leading-[110%] tracking-[0%] text-[rgba(105,9,26,1)] font-['Roboto']">
-          ARAB CUP 2025
-        </h1>
+          <div className="hidden md:flex space-x-1">
+            {navItems.map(item => (
+              <button
+                key={item.id}
+                onClick={() => navigate(item.id)}
+                className={`px-4 py-2 rounded-md flex items-center space-x-2 transition-all ${
+                  currentPage === item.id ? 'bg-red-700 text-white' : 'hover:bg-red-700/50'
+                }`}
+              >
+                <item.icon className="h-4 w-4" />
+                <span>{item.label}</span>
+              </button>
+            ))}
+          </div>
 
-
-        <div className="flex items-center space-x-6 text-[16px] font-medium leading-[100%] tracking-[0%] text-[rgba(105,9,26,1)] font-['Roboto']">
-          <p>Tournois</p>
-          <p>Équipes</p>
-          <p>Classement</p>
-          <select
-            name="rsltCal"
-            id="rsltCal"
-            className="bg-[rgba(241,235,225,1)] text-[rgba(105,9,26,1)] font-['Roboto'] font-medium text-[16px] leading-[100%] border-none outline-none"
-          >
-            <option value="" className="cursor-pointer">Résultat & calendrier</option>
-          </select>
-
-          <FaSearch className="text-[rgba(105,9,26,1)] w-5 h-5 cursor-pointer" />
-          <FaGlobe className="text-[rgba(105,9,26,1)] w-5 h-5 cursor-pointer" />
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="md:hidden pb-4">
+            {navItems.map(item => (
+              <button
+                key={item.id}
+                onClick={() => { navigate(item.id); setMobileMenuOpen(false); }}
+                className={`w-full text-left px-4 py-2 rounded-md flex items-center space-x-2 mb-1 ${
+                  currentPage === item.id ? 'bg-red-700' : 'hover:bg-red-700/50'
+                }`}
+              >
+                <item.icon className="h-4 w-4" />
+                <span>{item.label}</span>
+              </button>
+            ))}
+          </div>
+        )}
       </div>
-    </div>
+    </nav>
   );
 };
-
 export default Navbar;
