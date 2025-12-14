@@ -15,12 +15,62 @@
   { "id": 14, "name": "Sofiane Bendebka", "position": "Midfielder", "age": 28, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 1 },
   { "id": 15, "name": "Aïssa Mandi", "position": "Defender", "age": 31, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 1 },
   { "id": 16, "name": "Ramiz Zerrouki", "position": "Midfielder", "age": 24, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 1 },
+
   { "id": 17, "name": "Achraf Hakimi", "position": "Defender", "age": 25, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 5 },
   { "id": 18, "name": "Hakim Ziyech", "position": "Midfielder", "age": 30, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 5 },
   { "id": 19, "name": "Sofyan Amrabat", "position": "Midfielder", "age": 27, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 5 },
-  { "id": 20, "name": "Almoez Ali", "position": "Forward", "age": 28, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 13 },
-  { "id": 21, "name": "Akram Afif", "position": "Forward", "age": 27, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 13 },
+  { "id": 20, "name": "Soufiane Rahimi", "position": "Forward", "age": 27, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 5 },
+  { "id": 21, "name": "Romain Saïss", "position": "Defender", "age": 34, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 5 },
+
   { "id": 22, "name": "Salem Al-Dawsari", "position": "Midfielder", "age": 32, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 2 },
-  { "id": 23, "name": "Mohamed Salah", "position": "Forward", "age": 31, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 3 },
-  { "id": 24, "name": "Youssef Msakni", "position": "Forward", "age": 32, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 9 }
+  { "id": 23, "name": "Salman Al-Faraj", "position": "Midfielder", "age": 33, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 2 },
+  { "id": 24, "name": "Mohammed Al-Owais", "position": "Goalkeeper", "age": 33, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 2 },
+  { "id": 25, "name": "Fahad Al-Muwallad", "position": "Forward", "age": 29, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 2 },
+  { "id": 26, "name": "Nawaf Al-Abed", "position": "Midfielder", "age": 31, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 2 },
+  { "id": 27, "name": "Mohammed Al-Breik", "position": "Defender", "age": 30, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 2 },
+  { "id": 28, "name": "Trezeguet (Mahmoud Hassan)", "position": "Midfielder", "age": 30, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 3 },
+  { "id": 29, "name": "Ali Gabr", "position": "Defender", "age": 33, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 3 },
+  { "id": 30, "name": "Mohamed Salah", "position": "Forward", "age": 31, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 3 },
+  { "id": 31, "name": "Ahmed Hegazi", "position": "Defender", "age": 32, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 3 },
+  { "id": 32, "name": "Mohamed Elneny", "position": "Midfielder", "age": 30, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 3 },
+
+  { "id": 33, "name": "Hassan Maatouk", "position": "Forward", "age": 36, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 4 },
+  { "id": 34, "name": "Felipe Scolari", "position": "Midfielder", "age": 31, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 4 },
+  { "id": 35, "name": "Roda Antar", "position": "Defender", "age": 34, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 4 },
+  { "id": 36, "name": "Ali Hamam", "position": "Defender", "age": 33, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 4 },
+
+  { "id": 37, "name": "Baha' Abdel-Rahman", "position": "Defender", "age": 33, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 6 },
+  { "id": 38, "name": "Ahmed Samir", "position": "Forward", "age": 29, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 6 },
+
+  { "id": 39, "name": "Omar Al Somah", "position": "Forward", "age": 34, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 7 },
+  { "id": 40, "name": "Firas Al Khatib", "position": "Forward", "age": 36, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 7 },
+
+  { "id": 41, "name": "Abdelatif Bahdari", "position": "Defender", "age": 35, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 8 },
+
+  { "id": 42, "name": "Ferjani Sassi", "position": "Midfielder", "age": 32, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 9 },
+  { "id": 43, "name": "Youssef Msakni", "position": "Forward", "age": 32, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 9 },
+  { "id": 44, "name": "Ellyes Skhiri", "position": "Midfielder", "age": 26, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 9 },
+
+  { "id": 45, "name": "Ali Al Habsi", "position": "Goalkeeper", "age": 40, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 10 },
+  { "id": 46, "name": "Ahmed Kano", "position": "Midfielder", "age": 38, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 10 },
+
+  { "id": 47, "name": "Ali Mabkhout", "position": "Forward", "age": 33, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 11 },
+
+  { "id": 48, "name": "Haitham Mustafa", "position": "Midfielder", "age": 36, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 12 },
+
+  { "id": 49, "name": "Almoez Ali", "position": "Forward", "age": 28, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 13 },
+
+  { "id": 50, "name": "Younis Mahmoud", "position": "Forward", "age": 40, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 14 },
+
+  { "id": 51, "name": "Mohamed Al-Romaihi", "position": "Forward", "age": 30, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 15 },
+
+  { "id": 52, "name": "Bader Al-Mutawa", "position": "Forward", "age": 40, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 16 },
+
+  { "id": 53, "name": "Ali Al-Bulaihi", "position": "Defender", "age": 32, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 17 },
+
+  { "id": 54, "name": "Mohammed Al-Kubati", "position": "Midfielder", "age": 34, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 18 },
+
+  { "id": 55, "name": "Abdoul Ba", "position": "Midfielder", "age": 29, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 19 },
+
+  { "id": 56, "name": "El Fardou Ben Nabouhane", "position": "Forward", "age": 33, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0, "minutes": 0, "teamId": 20 }
 ]
